@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  /* border-bottom: 1px solid #ccc; */
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.header li {
+  margin-left: 30px;
+}
+
+.menu a {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  transition: 0.3s;
+}
+
+.menu a::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 0;
+  height: 2px;
+  background-color: #fcc028;
+  transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a:focus {
+  color: #fcc028;
+}
+
+.menu a:hover::after,
+.menu a:focus::after {
+  width: 100%;
+}

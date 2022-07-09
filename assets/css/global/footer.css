@@ -1,0 +1,35 @@
+.footer-bg {
+  background-color: #264155;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-contato h3,
+.footer-informacoes h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.footer-endereco a,
+.footer-informacoes a {
+  display: block;
+}
+
+.footer-endereco {
+  border-bottom: 1px solid #111;
+}
+
+.footer-redes {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.copy {
+  color: #fff;
+  text-align: center;
+}

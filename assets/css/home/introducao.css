@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.main-conteudo {
+  color: #111;
+}
+.main-conteudo h1 {
+  font-size: 64px;
+}
+
+.main-conteudo h2 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #2b475d;
+  margin-bottom: 20px;
+}
+
+.frase {
+  color: #fcc028;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.paragrafo {
+  font-size: 18px;
+  color: #737373;
+  width: 50ch;
+  margin-bottom: 40px;
+}
+
+.main-botoes {
+  display: flex;
+  gap: 40px;
+}

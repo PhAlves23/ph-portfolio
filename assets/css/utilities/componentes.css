@@ -1,0 +1,56 @@
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.botao {
+  background-color: #fcc028;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.botao:hover,
+.botao:focus {
+  background-color: transparent;
+  border: 2px solid #fcc028;
+  color: #fcc028;
+}
+
+.dowload-cv {
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+  /* background: url("../../img/dowload.svg") no-repeat right center; */
+}
+
+.dowload-cv:hover,
+.dowload-cv:focus {
+  background-color: #686868;
+  color: #fff;
+}
+
+.detalhes {
+  border: 1px solid #fcc028;
+  color: #fcc028;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+  transition: 0.3s;
+}
+
+.detalhes:hover {
+  background-color: #fcc028;
+  color: #fff;
+}
