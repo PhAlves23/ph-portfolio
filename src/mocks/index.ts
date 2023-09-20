@@ -37,11 +37,11 @@ export const headerLinks = [
     label: "Contato",
     path: "#contact",
   },
-  {
-    id: 6,
-    label: "Blog",
-    path: "/blog",
-  },
+  // {
+  //   id: 6,
+  //   label: "Blog",
+  //   path: "/blog",
+  // },
 ];
 
 export const projectsItems = [

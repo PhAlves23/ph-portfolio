@@ -2,11 +2,11 @@
 import Image from "next/image";
 import { Button } from "../button";
 import { Typewriter } from "react-simple-typewriter";
+import Link from "next/link";
 
 export const Banner = () => {
   return (
-    <section className="w-full container-custom py-10 px-5 lg:py-10 lg:px-0">
-      {/* <Image src="/banner.svg" width={370} height={420} alt="Banner image" /> */}
+    <section className="w-full container-custom py-10 px-5 lg:pt-10 lg:pb-0 lg:px-0">
       <div className="w-full h-full lg:h-screen flex flex-col items-center max-w-3xl my-0 mx-auto">
         <Image
           src="/banner.svg"
@@ -37,7 +37,13 @@ export const Banner = () => {
 
         <div className="flex justify-center items-center gap-5">
           <Button type="button" text="Dowload CV" variant="primary" />
-          <Button type="button" text="Entrar em contato" variant="secondary" />
+          <Link href="https://wa.me/+5511972266510" target="_blank">
+            <Button
+              type="button"
+              text="Entrar em contato"
+              variant="secondary"
+            />
+          </Link>
         </div>
       </div>
     </section>

@@ -39,7 +39,10 @@ export const Contact = () => {
   ];
 
   return (
-    <section className="w-full lg:flex-row gap-10 lg:gap-16 container-custom py-10 px-5 xl:py-20 xl:px-0 ">
+    <section
+      id="contact"
+      className="w-full lg:flex-row gap-10 lg:gap-16 container-custom py-10 px-5 xl:py-20 xl:px-0 "
+    >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
         <div className="order-2 lg:order-1">
           <InputDefault
@@ -62,7 +65,7 @@ export const Contact = () => {
             </label>
             <textarea
               cols={30}
-              rows={10}
+              rows={5}
               className="textarea-style resize-none"
               placeholder="Digite a sua mensagem"
             ></textarea>
