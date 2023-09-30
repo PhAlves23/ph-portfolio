@@ -3,8 +3,8 @@ import { Banner } from "@/components/banner";
 import { Belt } from "@/components/belt";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
-import { Header } from "@/components/header";
 import { Project } from "@/components/project";
+import { SectionBlog } from "@/components/section_blog";
 import { Service } from "@/components/service";
 
 export default function Home() {
@@ -16,6 +16,7 @@ export default function Home() {
       <Service />
       <Project />
       <About />
+      {/* <SectionBlog /> */}
       <Contact />
       <Footer />
     </>

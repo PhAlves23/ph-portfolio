@@ -1,10 +1,12 @@
 import React, { ButtonHTMLAttributes, ReactNode } from "react";
 import { clsx } from "clsx";
+import { motion } from "framer-motion";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "default" | "primary" | "secondary";
   text: string;
   icon?: ReactNode;
+  onClick?: () => void;
 }
 
 const variantStyle = {
@@ -15,17 +17,19 @@ const variantStyle = {
   hasIcon: "flex justify-center items-center gap-5",
 };
 
-export const Button = ({ variant = "default", text, icon }: Props) => {
+export const Button = ({ variant = "default", text, icon, onClick }: Props) => {
   return (
-    <button
+    <motion.button
       className={clsx(
         variantStyle.base,
         icon && variantStyle.hasIcon,
         variantStyle[variant]
       )}
+      whileTap={{ scale: 0.85 }}
+      onClick={onClick}
     >
       {icon}
       {text}
-    </button>
+    </motion.button>
   );
 };

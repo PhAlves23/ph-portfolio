@@ -209,3 +209,114 @@ export const serviceItems = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi minus distinctio architecto, quam, facere error eos iure rem alias.",
   },
 ];
+
+export const contactItems = [
+  // {
+  //   id: 1,
+  //   icon: FiMail,
+  //   title: "E-mail",
+  //   description: "ph23.alves@gmail.com",
+  //   path: "mailto:ph23.alves@gmail.com",
+  // },
+
+  {
+    id: 2,
+    icon: SiInstagram,
+    title: "Instagram",
+    description: "@ph.alves.dev",
+    path: "https://www.instagram.com/ph.alves.dev/",
+  },
+  {
+    id: 3,
+    icon: SiLinkedin,
+    title: "Linkedin",
+    description: "ph-alves",
+    path: "https://www.linkedin.com/in/ph-alves/",
+  },
+  {
+    id: 4,
+    icon: SiGithub,
+    title: "GitHub",
+    description: "PhAlves23",
+    path: "https://github.com/PhAlves23",
+  },
+];
+
+export const beltItems = [
+  {
+    id: 1,
+    label: "HTML5",
+  },
+  {
+    id: 2,
+    label: "CSS3",
+  },
+  {
+    id: 3,
+    label: "JAVASCRIPT",
+  },
+  {
+    id: 4,
+    label: "TYPESCRIPT",
+  },
+  {
+    id: 5,
+    label: "JAVA",
+  },
+  {
+    id: 6,
+    label: "SPRING BOOT",
+  },
+  {
+    id: 7,
+    label: "GIT",
+  },
+  {
+    id: 8,
+    label: "NODEJS",
+  },
+  {
+    id: 9,
+    label: "NESTJS",
+  },
+  {
+    id: 10,
+    label: "NEXTJS",
+  },
+  {
+    id: 11,
+    label: "SCRUM",
+  },
+  {
+    id: 12,
+    label: "REACTJS",
+  },
+  {
+    id: 13,
+    label: "TAILWINDCSS",
+  },
+  {
+    id: 14,
+    label: "SASS",
+  },
+  {
+    id: 15,
+    label: "FIGMA",
+  },
+  {
+    id: 16,
+    label: "ADOBEXD",
+  },
+  {
+    id: 17,
+    label: "LINUX",
+  },
+  {
+    id: 18,
+    label: "WINDOWS",
+  },
+  {
+    id: 19,
+    label: "STYLED COMPONENTS",
+  },
+];

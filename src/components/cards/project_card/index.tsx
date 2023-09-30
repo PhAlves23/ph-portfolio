@@ -1,7 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FiEye } from "react-icons/fi";
-import { IconType } from "react-icons/lib";
+import { motion } from "framer-motion";
 
 interface ProjectCardProps {
   id: number;
@@ -35,9 +37,12 @@ export const ProjectCard = ({
             <p className="text-sm">{description}</p>
           </div>
           <Link href={`/projeto_detalhe/${id}`} title="Ver mais">
-            <div className="bg-neutral-700 p-3 lg:p-5 rounded-full">
+            <motion.div
+              whileTap={{ scale: 0.85 }}
+              className="bg-neutral-700 p-3 lg:p-5 rounded-full"
+            >
               <FiEye size={28} />
-            </div>
+            </motion.div>
           </Link>
         </div>
         <div className="flex items-center gap-2">

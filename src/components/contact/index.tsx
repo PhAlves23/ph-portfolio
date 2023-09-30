@@ -1,42 +1,21 @@
+"use client";
 import { Button } from "../button";
 import { ContactItem } from "../contact_item";
 import { InputDefault } from "../inputs/input_default";
-import { FiMail } from "react-icons/fi";
-import { SiLinkedin, SiInstagram, SiGithub, SiDiscord } from "react-icons/si";
 import { SectionTitle } from "../section_title";
+import { contactItems } from "@/mocks";
+import { useState } from "react";
+// import sendEmail from "@/utils/send_email";
 
 export const Contact = () => {
-  const contactItems = [
-    // {
-    //   id: 1,
-    //   icon: FiMail,
-    //   title: "E-mail",
-    //   description: "ph23.alves@gmail.com",
-    //   path: "mailto:ph23.alves@gmail.com",
-    // },
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-    {
-      id: 2,
-      icon: SiInstagram,
-      title: "Instagram",
-      description: "@ph.alves.dev",
-      path: "https://www.instagram.com/ph.alves.dev/",
-    },
-    {
-      id: 3,
-      icon: SiLinkedin,
-      title: "Linkedin",
-      description: "ph-alves",
-      path: "https://www.linkedin.com/in/ph-alves/",
-    },
-    {
-      id: 4,
-      icon: SiGithub,
-      title: "GitHub",
-      description: "PhAlves23",
-      path: "https://github.com/PhAlves23",
-    },
-  ];
+  const handleSubmit = async () => {
+    console.log(name, email, message);
+    // await sendEmail(name, email, message);
+  };
 
   return (
     <section
@@ -50,6 +29,7 @@ export const Contact = () => {
             id="name"
             name="name"
             placeholder="Digite o seu nome"
+            onChange={(e) => setName(e.target.value)}
           />
 
           <InputDefault
@@ -57,6 +37,7 @@ export const Contact = () => {
             id="email"
             name="email"
             placeholder="Digite o seu e-mail"
+            onChange={(e) => setEmail(e.target.value)}
           />
 
           <div className="mb-5">
@@ -68,11 +49,19 @@ export const Contact = () => {
               rows={5}
               className="textarea-style resize-none"
               placeholder="Digite a sua mensagem"
+              id="message"
+              name="message"
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
 
-          <Button text="Enviar mensagem" variant="primary" />
+          <Button
+            text="Enviar mensagem"
+            variant="primary"
+            onClick={handleSubmit}
+          />
         </div>
+
         <div className="order-1 lg:order-2">
           <SectionTitle
             title="Contato"

@@ -1,3 +1,5 @@
+"use client";
+
 import { projectsItems } from "@/mocks";
 import { ProjectCard } from "../cards/project_card";
 import { SectionTitle } from "../section_title";
